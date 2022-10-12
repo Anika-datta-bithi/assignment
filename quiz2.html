@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Coding test</title>
+</head>
+
+<body>
+    Q1. what is javaScipt?<br>
+    <input type="radio" name="question1">a language<br>
+    <input type="radio" name="question1">part of glasses<br>
+    <input type="radio" name="question1">type of coding<br>
+    <input type="radio" name="question1" id="correct1">both 1 & 3 <br>
+    Q2. what is the work of javaScipt?<br>
+    <input type="radio" name="question2">coloring<br>
+    <input type="radio" name="question2">counting<br>
+    <input type="radio" name="question2">etc<br>
+    <input type="radio" name="question2" id="correct2">none<br>
+    <div> Q3. How to link javaScipt?<br>
+        <input type="radio" name="question3" id="correct3">by script<br>
+        <input type="radio" name="question3">by .css<br>
+        <input type="radio" name="question3">by .echo<br>
+        <input type="radio" name="question3">none<br>
+    </div>
+
+    <input type="submit" name="submit" value="submitQuiz" onclick="result()">
+
+    <script type="text/javaScript">
+        function result(){
+            var score=0;
+            if(document.getElementById('correct1').checked){
+                score++;
+            }
+            if(document.getElementById('correct2').checked){
+                score++;
+            }
+            if(document.getElementById('correct3').checked){
+                score++;
+            }
+            alert("Your score is:"+score);
+        }
+    </script>
+
+</body>
+
+</html>
